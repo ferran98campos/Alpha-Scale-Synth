@@ -1,4 +1,4 @@
-#N canvas 160 336 1920 997 12;
+#N canvas 567 469 1920 997 12;
 #X obj 109 52 notein;
 #X obj 108 364 dac~;
 #X obj 109 141 -1;
@@ -9,11 +9,11 @@
 #X obj 288 207 send volume;
 #X obj 109 260 clone mono-synth 5;
 #X obj 109 103 poly 4 1;
-#X obj 287 96 ctlin 3;
-#X obj 286 25 ctlin 2;
-#X obj 343 24 ctlin 16;
-#X obj 353 96 ctlin 19;
-#X obj 316 169 hsl 162 19 0 2 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 291 169 hsl 162 19 0 10 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 290 102 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 289 29 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 291 244 hsl 162 19 0 200 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 291 277 send LFO_freq;
 #X connect 0 0 9 0;
 #X connect 0 1 9 1;
 #X connect 2 0 3 0;
@@ -24,8 +24,7 @@
 #X connect 9 0 2 0;
 #X connect 9 1 4 0;
 #X connect 9 2 3 2;
-#X connect 10 0 6 0;
-#X connect 11 0 5 0;
+#X connect 10 0 7 0;
+#X connect 11 0 6 0;
 #X connect 12 0 5 0;
-#X connect 13 0 6 0;
-#X connect 14 0 7 0;
+#X connect 13 0 14 0;
