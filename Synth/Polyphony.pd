@@ -1,4 +1,4 @@
-#N canvas 567 469 1920 997 12;
+#N canvas -20 98 1920 956 12;
 #X obj 109 52 notein;
 #X obj 108 364 dac~;
 #X obj 109 141 -1;
@@ -9,11 +9,16 @@
 #X obj 288 207 send volume;
 #X obj 109 260 clone mono-synth 5;
 #X obj 109 103 poly 4 1;
-#X obj 291 169 hsl 162 19 0 10 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 290 102 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 289 29 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 291 244 hsl 162 19 0 200 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 291 277 send LFO_freq;
+#X obj 291 169 hsl 162 19 0 10 0 0 empty empty empty -2 -10 0 12 #fcfcfc
+#000000 #000000 0 1;
+#X obj 290 102 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc
+#000000 #000000 0 1;
+#X obj 289 29 hsl 162 19 0 10000 0 0 empty empty empty -2 -10 0 12
+#fcfcfc #000000 #000000 0 1;
+#X text 481 27 Cut-off frequency of a LPF;
+#X text 481 103 Release rate;
+#X text 489 168 Master volume;
+#X text 99 418 Patch to implement polyphony;
 #X connect 0 0 9 0;
 #X connect 0 1 9 1;
 #X connect 2 0 3 0;
@@ -27,4 +32,3 @@
 #X connect 10 0 7 0;
 #X connect 11 0 6 0;
 #X connect 12 0 5 0;
-#X connect 13 0 14 0;
