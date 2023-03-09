@@ -1,4 +1,4 @@
-#N canvas -20 98 1920 956 12;
+#N canvas -168 79 1920 956 12;
 #X obj 109 52 notein;
 #X obj 108 364 dac~;
 #X obj 109 141 -1;
@@ -9,7 +9,7 @@
 #X obj 288 207 send volume;
 #X obj 109 260 clone mono-synth 5;
 #X obj 109 103 poly 4 1;
-#X obj 291 169 hsl 162 19 0 10 0 0 empty empty empty -2 -10 0 12 #fcfcfc
+#X obj 291 169 hsl 162 19 0 20 0 0 empty empty empty -2 -10 0 12 #fcfcfc
 #000000 #000000 0 1;
 #X obj 290 102 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc
 #000000 #000000 0 1;
